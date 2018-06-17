@@ -1,0 +1,15 @@
+Each page has its own descriptor, which contains all the necessary information about the page. 
+In addition to the information about the state of the page in the descriptor, the virtual memory 
+management system stores the state of the pages in the page database. In this database, a page 
+can be marked as having one of the following states:
+-> Free. The page is available for use after filling it with zeros.
+-> Zeros. The page is free, filled with zeros and is available for use by applications.
+-> Correct. The page is used by the active process.
+-> Modified. The content of the page has been changed, but the page has not yet been saved to disk in the page file (not rolled).
+-> Spare. The page has been removed from the current set of virtual process pages.
+-> Bad. Access to this page leads to a hardware error.
+
+Warning!!!
+Some versions of the Visual Studio may produce an error, you need to turn off error checking for this. 
+This is not possible professionally, but other ways to eliminate errors do not always work.
+*I worked in the Visual Studio 2015-2017, this is the Microsoft development environment (for those who work in a different environment)
